@@ -23,9 +23,7 @@ export const AddIssue = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios(
-          'https://my-issue-tracker-v1.herokuapp.com/users'
-        );
+        const response = await axios('/users');
         console.log('response', response.data);
         const uniqueDevs = [
           ...new Set(response.data.map((item) => item.username)),
@@ -46,10 +44,7 @@ export const AddIssue = () => {
         assignedTo,
         priority,
       };
-      const response = await axios.post(
-        'https://my-issue-tracker-v1.herokuapp.com/issues/add',
-        body
-      );
+      const response = await axios.post('/issues/add', body);
       alert(`Issue assigned to ${assignedTo}`);
       console.log(response.status);
     } catch (error) {
