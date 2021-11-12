@@ -24,7 +24,7 @@ export const AddIssue = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios(
-          'https://my-issue-tracker-v1.herokuapp.com/users'
+          'https://my-issue-tracker-v1.herokuapp.com/api/users'
         );
         console.log('response', response.data);
         const uniqueDevs = [

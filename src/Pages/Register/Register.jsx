@@ -24,7 +24,7 @@ export const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'https://my-issue-tracker-v1.herokuapp.com/auth/register',
+        'https://my-issue-tracker-v1.herokuapp.com/api/auth/register',
         {
           firstName,
           lastName,

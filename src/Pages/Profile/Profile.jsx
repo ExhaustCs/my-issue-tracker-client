@@ -24,7 +24,7 @@ export const Profile = ({ user }) => {
     const fetchUser = async () => {
       try {
         const response = await axios(
-          `https://my-issue-tracker-v1.herokuapp.com/users/${user.id}`
+          `https://my-issue-tracker-v1.herokuapp.com/api/users/${user.id}`
         );
         console.log('fetchUser:', response);
         setUserInfo(response.data);
@@ -35,7 +35,7 @@ export const Profile = ({ user }) => {
     const fetchIssues = async () => {
       try {
         const response = await axios.get(
-          `https://my-issue-tracker-v1.herokuapp.com/issues/${user.username}`
+          `https://my-issue-tracker-v1.herokuapp.com/api/issues/${user.username}`
         );
         console.log('fetchIssues:', response);
         setIssues(response.data);

@@ -20,7 +20,7 @@ export const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await axios.post(
-      'https://my-issue-tracker-v1.herokuapp.com/auth/login',
+      'https://my-issue-tracker-v1.herokuapp.com/api/auth/login',
       {
         username,
         password,
