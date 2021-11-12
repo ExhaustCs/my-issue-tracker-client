@@ -1,0 +1,17 @@
+/* .App {
+  display: flex;
+} */
+.header {
+  /* text-align: center; */
+  /* font-size: ; */
+}
+
+li {
+  list-style: none;
+  color: cadetblue;
+  cursor: pointer;
+}
+
+:link {
+  text-decoration: none;
+}
