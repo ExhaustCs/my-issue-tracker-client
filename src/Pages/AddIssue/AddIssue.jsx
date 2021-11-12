@@ -47,7 +47,7 @@ export const AddIssue = () => {
         priority,
       };
       const response = await axios.post(
-        'https://my-issue-tracker-v1.herokuapp.com/issues/add',
+        'https://my-issue-tracker-v1.herokuapp.com/api/issues/add',
         body
       );
       alert(`Issue assigned to ${assignedTo}`);
