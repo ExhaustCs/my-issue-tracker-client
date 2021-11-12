@@ -12,7 +12,7 @@ export const CurrentIssues = () => {
     const fetchIssues = async () => {
       try {
         const response = await axios.get(
-          'https://my-issue-tracker-v1.herokuapp.com/issues'
+          'http://my-issue-tracker-v1.herokuapp.com/issues'
         );
         setIssues(response.data);
         // console.log('search: ', search);
