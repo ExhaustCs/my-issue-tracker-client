@@ -39,11 +39,11 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://my-issue-tracker-v1.herokuapp.com/api",
   "devDependencies": {
     "autoprefixer": "^9",
     "postcss": "^7",
     "tailwind-styled-components": "^2.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  }
+  },
+  "proxy": "http://my-issue-tracker-v1.herokuapp.com/api"
 }
